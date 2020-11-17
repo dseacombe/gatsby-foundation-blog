@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Self worth
+title: Self Worth
 slug: /self-worth
 date: 2020-11-17 18:26
 description: "When you wake-up in the morning, do you rise with a fresh
