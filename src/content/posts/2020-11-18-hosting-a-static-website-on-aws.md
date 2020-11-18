@@ -38,8 +38,7 @@ On the Permissions Tab, click on the Block Public Access Tab and turn it off. Ty
 
 ![](/assets/aws-3.png)
 
-
-Then on the Bucket Policy tab, enter the policy as below, replacing the url in this example, with your own.  Note that: '*"Version": "2012-10-17"'* is not a date, so don't change it.
+Then on the Bucket Policy tab, enter the policy as below, replacing the url in this example, with your own.  Note that: '*"Version": "2012-10-17"'* is not a date, so don't try to change it.
 
 ```
 { 
@@ -68,16 +67,13 @@ The Static Website Hosting should be set to *redirect to the main domain name,* 
 
 ![](/assets/aws-5.png)
 
-
 Just like the main domain, the www.subdomain should have public access, and a Bucket Policy set.
-￼
 
 ## Create a Hosted Zone on Amazon Route53
 
-Create a Hosted Zone for this domain name:
+Create a Hosted Zone for your domain name.  You just need one, the www. subdomain will be taken care of by a second A Record.
 
 ![](/assets/aws-6.png)
-
 
 Then Click on the newly created hosted zone domain name:￼
 
