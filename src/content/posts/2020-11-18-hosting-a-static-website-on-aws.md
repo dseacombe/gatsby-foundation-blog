@@ -89,27 +89,32 @@ and then select the S3 bucket that is offered
 
 Leave the record type as A - Routes traffic to an IPv4 address and some AWS resources
 
-Change Evaluate target health from the default to ‘No’.
+Change Evaluate target health *from the default to ‘No’.*
 
 Then click on the Define Simple Record button.
 
-Repeat the above, but this time enter www in the subdomain box. Everything else is the same.
+*Repeat the above,* but this time enter www in the subdomain box. Everything else is the same.
 
 Don’t forget to click on the final Create Records button.
 
-When the domain has a forwarded email address,  Create an MX Record
-and include the domain registrar’s MX records:
+
+
+**Create an MX Record** ￼
+
+When the domain has a forwarded email address, for example, you don't actually have an email account, but instead forward a contact@domainname.com to your own email, then you will need to create an  MX Record, and include the domain registrar’s MX records:
 
 For example:
 
   10 mx0.myregistrar.co.uk
   20 mx1.myregistrar.co.uk
 
-When the domain you are moving to AWS has an email account as well, then you will need to create several more records:
-
-**Create an MX Record** ￼
+If this domain does have its own email account with a third-party email provider then you need to create an MX record with *their* MX records, or your email will stop working.
 
 ![](/assets/aws-8.png)
+
+
+
+When the domain you are moving to AWS has an email account as well, then you will also need to create  TXT and SRV records:
 
 **Create a TXT Record** 
 
