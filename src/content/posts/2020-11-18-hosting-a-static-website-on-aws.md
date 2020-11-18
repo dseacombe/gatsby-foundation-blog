@@ -136,7 +136,7 @@ Update the Nameservers to be those specified by AWS Route53, as in the graphic b
 
 ![](/assets/aws-11.png)
 
-￼to the Nameserver section in your Domain Registrar - if it is not Amazon Route53, who also provide these services.
+Go ￼to the Nameserver section in your Domain Registrar (if it is not Amazon Route53, who also provide these services).
 
 ![](/assets/aws-11b.png)
 
