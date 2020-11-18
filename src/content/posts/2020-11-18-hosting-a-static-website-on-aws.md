@@ -64,19 +64,26 @@ Go back to the beginning and create a new bucket for the www. subdomain.
 *This time, there is no need to upload the site files.*
 
 The Static Website Hosting should be set to redirect to the main domain name.
-￼
+
+![](/assets/aws-5.png)
+
+
 Just like the main domain, the www.subdomain should have public access, and a Bucket Policy set.
 ￼
 
-\#Create a Hostes Zone on Amazon Route53
+## Create a Hosted Zone on Amazon Route53
 
 Create a Hosted Zone for this domain name:
 
-￼
+![](/assets/aws-6.png)
+
+
 Then Click on the newly created hosted zone domain name:
 ￼
 
-Create an A Record by clicking on Create Record, then Simple Routing and Next. Then click on Define simple record.
+![](/assets/aws-7.png)
+
+**Create an A Record** by clicking on Create Record, then Simple Routing and Next. Then click on Define simple record.
 
 Leave the subdomain box blank.
 
@@ -102,8 +109,10 @@ and include the domain registrar’s MX records:
 
 When the domain has an email account as well, then 
 
-Create an MX Record 
+**Create an MX Record** 
 ￼
+
+![](/assets/aws-8.png)
 
 Create a TXT Record 
 
