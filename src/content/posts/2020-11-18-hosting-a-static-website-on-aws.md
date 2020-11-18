@@ -50,7 +50,7 @@ Then on the Bucket Policy tab, enter the policy as below, replacing the url in t
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::**darkyellow.co.uk**/*"
+            "Resource": "arn:aws:s3:::darkyellow.co.uk/*"
         }
     ]
 }
