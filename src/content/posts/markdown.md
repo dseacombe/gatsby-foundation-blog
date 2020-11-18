@@ -1,11 +1,11 @@
 ---
 template: blog-post
+title: "Markdown: Syntax"
 slug: /markdown
 date: 2020-05-09T05:53:16.102Z
-title: "Markdown: Syntax"
-featuredImage: /assets/mike-dorner-sf_1ZDA1YFw-unsplash.jpg
+description: Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
+featuredImage: /assets/markdown-blue.png
 ---
-
 ## Overview
 
 ### Philosophy
@@ -19,6 +19,8 @@ Markdown's syntax has been influenced by several existing text-to-HTML
 filters -- including [Setext](http://docutils.sourceforge.net/mirror/setext.html), [atx](http://www.aaronsw.com/2002/atx/), [Textile](http://textism.com/tools/textile/), [reStructuredText](http://docutils.sourceforge.net/rst.html),
 [Grutatext](http://www.triptico.com/software/grutatxt.html), and [EtText](http://ettext.taint.org/doc/) -- the single biggest source of
 inspiration for Markdown's syntax is the format of plain text email.
+
+
 
 ## Block Elements
 
@@ -40,14 +42,13 @@ end a line with two or more spaces, then type return.
 
 ### Headers
 
-Markdown supports two styles of headers, [Setext] [1] and [atx] [2].
+Markdown supports two styles of headers, \[Setext] \[1] and \[atx] \[2].
 
 Optionally, you may "close" atx-style headers. This is purely
 cosmetic -- you can use this if you think it looks better. The
 closing hashes don't even need to match the number of hashes
 used to open the header. (The number of opening hashes
 determines the header level.)
-
 
 ### Blockquotes
 
@@ -59,7 +60,7 @@ wrap the text and put a `>` before every line:
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-> 
+>
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 > id sem consectetuer libero luctus adipiscing.
 
@@ -67,11 +68,11 @@ Markdown allows you to be lazy and only put the `>` before the first
 line of a hard-wrapped paragraph:
 
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+>
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
+> id sem consectetuer libero luctus adipiscing.
 
 Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
 adding additional levels of `>`:
@@ -86,18 +87,19 @@ Blockquotes can contain other Markdown elements, including headers, lists,
 and code blocks:
 
 > ## This is a header.
-> 
-> 1.   This is the first list item.
-> 2.   This is the second list item.
-> 
+>
+> 1. This is the first list item.
+> 2. This is the second list item.
+>
 > Here's some example code:
-> 
->     return shell_exec("echo $input | $markdown_script");
+>
+> ```
+> return shell_exec("echo $input | $markdown_script");
+> ```
 
 Any decent text editor should make email-style quoting easy. For
 example, with BBEdit, you can make a selection and choose Increase
 Quote Level from the Text menu.
-
 
 ### Lists
 
@@ -106,27 +108,27 @@ Markdown supports ordered (numbered) and unordered (bulleted) lists.
 Unordered lists use asterisks, pluses, and hyphens -- interchangably
 -- as list markers:
 
-*   Red
-*   Green
-*   Blue
+* Red
+* Green
+* Blue
 
 is equivalent to:
 
-+   Red
-+   Green
-+   Blue
+* Red
+* Green
+* Blue
 
 and:
 
--   Red
--   Green
--   Blue
+* Red
+* Green
+* Blue
 
 Ordered lists use numbers followed by periods:
 
-1.  Bird
-2.  McHale
-3.  Parish
+1. Bird
+2. McHale
+3. Parish
 
 It's important to note that the actual numbers you use to mark the
 list have no effect on the HTML output Markdown produces. The HTML
@@ -134,15 +136,15 @@ Markdown produces from the above list is:
 
 If you instead wrote the list in Markdown like this:
 
-1.  Bird
-1.  McHale
-1.  Parish
+1. Bird
+2. McHale
+3. Parish
 
 or even:
 
 3. Bird
-1. McHale
-8. Parish
+4. McHale
+5. Parish
 
 you'd get the exact same HTML output. The point is, if you want to,
 you can use ordinal numbers in your ordered Markdown lists, so that
@@ -151,60 +153,63 @@ But if you want to be lazy, you don't have to.
 
 To make lists look nice, you can wrap items with hanging indents:
 
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-    viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-    Suspendisse id sem consectetuer libero luctus adipiscing.
+* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+  viverra nec, fringilla in, laoreet vitae, risus.
+* Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+  Suspendisse id sem consectetuer libero luctus adipiscing.
 
 But if you want to be lazy, you don't have to:
 
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.
+* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+  viverra nec, fringilla in, laoreet vitae, risus.
+* Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+  Suspendisse id sem consectetuer libero luctus adipiscing.
 
 List items may consist of multiple paragraphs. Each subsequent
 paragraph in a list item must be indented by either 4 spaces
 or one tab:
 
-1.  This is a list item with two paragraphs. Lorem ipsum dolor
-    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
-    mi posuere lectus.
+1. This is a list item with two paragraphs. Lorem ipsum dolor
+   sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+   mi posuere lectus.
 
-    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
-    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
-    sit amet velit.
-
-2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+   Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+   vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+   sit amet velit.
+2. Suspendisse id sem consectetuer libero luctus adipiscing.
 
 It looks nice if you indent every line of the subsequent
 paragraphs, but here again, Markdown will allow you to be
 lazy:
 
-*   This is a list item with two paragraphs.
+* This is a list item with two paragraphs.
 
-    This is the second paragraph in the list item. You're
-only required to indent the first line. Lorem ipsum dolor
-sit amet, consectetuer adipiscing elit.
+  ```
+  This is the second paragraph in the list item. You're
+  ```
 
-*   Another item in the same list.
+  only required to indent the first line. Lorem ipsum dolor
+  sit amet, consectetuer adipiscing elit.
+* Another item in the same list.
 
 To put a blockquote within a list item, the blockquote's `>`
 delimiters need to be indented:
 
-*   A list item with a blockquote:
+* A list item with a blockquote:
 
-    > This is a blockquote
-    > inside a list item.
+  > This is a blockquote
+  > inside a list item.
 
 To put a code block within a list item, the code block needs
 to be indented *twice* -- 8 spaces or two tabs:
 
-*   A list item with a code block:
+* A list item with a code block:
 
-        <code goes here>
+  ```
+  <code goes here>
+  ```
 
 ### Code Blocks
 
@@ -253,9 +258,11 @@ This is a normal paragraph:
 
 Here is an example of AppleScript:
 
-    tell application "Foo"
-        beep
-    end tell
+```
+tell application "Foo"
+    beep
+end tell
+```
 
 A code block continues until it reaches a line that is not indented
 (or the end of the article).
@@ -266,9 +273,11 @@ easy to include example HTML source code using Markdown -- just paste
 it and indent it, and Markdown will handle the hassle of encoding the
 ampersands and angle brackets. For example, this:
 
-    <div class="footer">
-        &copy; 2004 Foo Corporation
-    </div>
+```
+<div class="footer">
+    &copy; 2004 Foo Corporation
+</div>
+```
 
 ![Royal Mail](/assets/royal-mail-unsplash.jpg)
 
@@ -288,7 +297,7 @@ end tell
 
 Markdown supports two style of links: *inline* and *reference*.
 
-In both styles, the link text is delimited by [square brackets].
+In both styles, the link text is delimited by \[square brackets].
 
 To create an inline link, use a set of regular parentheses immediately
 after the link text's closing square bracket. Inside the parentheses,
@@ -308,11 +317,11 @@ HTML `<em>` tag; double `*`'s or `_`'s will be wrapped with an HTML
 
 *single asterisks*
 
-_single underscores_
+*single underscores*
 
 **double asterisks**
 
-__double underscores__
+**double underscores**
 
 ### Code
 
