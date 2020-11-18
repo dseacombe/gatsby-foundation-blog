@@ -12,7 +12,7 @@ featuredImage: /assets/markdown-blue.png
 
 Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
 
-Readability, however, is emphasized above all else. A Markdown-formatted
+Readability, however, is emphasised above all else. A Markdown-formatted
 document should be publishable as-is, as plain text, without looking
 like it's been marked up with tags or formatting instructions. While
 Markdown's syntax has been influenced by several existing text-to-HTML
@@ -112,15 +112,15 @@ Unordered lists use asterisks, pluses, and hyphens -- interchangably
 
 is equivalent to:
 
-* Red
-* Green
-* Blue
++ Red
++ Green
++ Blue
 
 and:
 
-* Red
-* Green
-* Blue
+- Red
+- Green
+- Blue
 
 Ordered lists use numbers followed by periods:
 
@@ -129,25 +129,7 @@ Ordered lists use numbers followed by periods:
 3. Parish
 
 It's important to note that the actual numbers you use to mark the
-list have no effect on the HTML output Markdown produces. The HTML
-Markdown produces from the above list is:
-
-If you instead wrote the list in Markdown like this:
-
-1. Bird
-2. McHale
-3. Parish
-
-or even:
-
-3. Bird
-4. McHale
-5. Parish
-
-you'd get the exact same HTML output. The point is, if you want to,
-you can use ordinal numbers in your ordered Markdown lists, so that
-the numbers in your source match the numbers in your published HTML.
-But if you want to be lazy, you don't have to.
+list have no effect on the HTML output Markdown produces. 
 
 To make lists look nice, you can wrap items with hanging indents:
 
@@ -157,13 +139,7 @@ To make lists look nice, you can wrap items with hanging indents:
 * Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
   Suspendisse id sem consectetuer libero luctus adipiscing.
 
-But if you want to be lazy, you don't have to:
-
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-  Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-  viverra nec, fringilla in, laoreet vitae, risus.
-* Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-  Suspendisse id sem consectetuer libero luctus adipiscing.
+But if you want to be lazy, you don't have to.
 
 List items may consist of multiple paragraphs. Each subsequent
 paragraph in a list item must be indented by either 4 spaces
@@ -269,9 +245,7 @@ Within a code block, ampersands (`&`) and angle brackets (`<` and `>`)
 are automatically converted into HTML entities. This makes it very
 easy to include example HTML source code using Markdown -- just paste
 it and indent it, and Markdown will handle the hassle of encoding the
-ampersands and angle brackets. For example, this:
-
-
+ampersands and angle brackets.
 
 Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
