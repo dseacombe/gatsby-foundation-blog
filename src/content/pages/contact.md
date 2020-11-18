@@ -3,6 +3,6 @@ template: contact-page
 slug: /contact
 title: Get in touch
 ---
-Got a burning question regarding **JAMstack**, Need a new **Website**, or just anything in general. We are happy to talk.
+Got a burning question on the change in business practices that puts the customer at the center of the business relationship? Or about how **JAMstack** is the answer? I am happy to talk.
 
-Just send us a message using the form below or you can send us a DM on [Twitter](https://twitter.com/stackrole)
+Just send me a message using the form below or you can DM me on [Twitter](https://twitter.com/dseacombe)
