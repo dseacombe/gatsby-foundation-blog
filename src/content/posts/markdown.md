@@ -20,8 +20,6 @@ filters -- including [Setext](http://docutils.sourceforge.net/mirror/setext.html
 [Grutatext](http://www.triptico.com/software/grutatxt.html), and [EtText](http://ettext.taint.org/doc/) -- the single biggest source of
 inspiration for Markdown's syntax is the format of plain text email.
 
-
-
 ## Block Elements
 
 ### Paragraphs and Line Breaks
@@ -273,13 +271,7 @@ easy to include example HTML source code using Markdown -- just paste
 it and indent it, and Markdown will handle the hassle of encoding the
 ampersands and angle brackets. For example, this:
 
-```
-<div class="footer">
-    &copy; 2004 Foo Corporation
-</div>
-```
 
-![Royal Mail](/assets/royal-mail-unsplash.jpg)
 
 Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
@@ -330,5 +322,3 @@ Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:
 
 Use the `printf()` function.
-
-<iframe src="https://sunflower-business-mobi.netlify.app/" width="600" height="400"></iframe>
