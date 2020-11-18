@@ -9,6 +9,10 @@ featuredImage: /assets/aws-blue.png
 ---
 # Domain Set Up
 
+
+
+Moving your domain and simple static website to AWS can seem daunting. Here is a conside guide on what to do. Firstly...
+
 *Sign Up or Sign In to the AWS Management Console*
 
 ![AWS Management Console](/assets/screenshot-2020-11-18-at-17.47.42.png "AWS Management Console")
@@ -22,7 +26,7 @@ On the Overview Tab, upload the site code, creating folders as necessary:
 ![](/assets/aws-1.png)
 
 You will probably need CSS, Img and JS folders, plus your favicon.ico and index.html.
-￼
+
 On the Properties Tab, click on Static Website Hosting, and check ‘Use this bucket to host a website.
 
 ![](/assets/aws-2.png)
@@ -97,22 +101,19 @@ Then click on the Define Simple Record button.
 
 Don’t forget to click on the final Create Records button.
 
-
-
-**Create an MX Record** ￼
+**Create an MX Record**
 
 When the domain has a forwarded email address, for example, you don't actually have an email account, but instead forward a contact@domainname.com to your own email, then you will need to create an  MX Record, and include the domain registrar’s MX records:
 
 For example:
 
   10 mx0.myregistrar.co.uk
+
   20 mx1.myregistrar.co.uk
 
 If this domain does have its own email account with a third-party email provider then you need to create an MX record with *their* MX records, or your email will stop working.
 
 ![](/assets/aws-8.png)
-
-
 
 When the domain you are moving to AWS has an email account as well, then you will also need to create  TXT and SRV records:
 
@@ -125,8 +126,6 @@ v=spf1 include:spf.everycloudtech.com Ip4:88.151.128.0/21 -all￼
 **Create an SRV Record** 
 
 ![](/assets/aws-10.png)
-
-￼
 
 ## At your domain registrar
 
