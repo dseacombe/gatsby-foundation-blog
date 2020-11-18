@@ -9,9 +9,7 @@ featuredImage: /assets/aws-blue.png
 ---
 # Domain Set Up
 
-
-
-Moving your domain and simple static website to AWS can seem daunting. Here is a conside guide on what to do. Firstly...
+Moving your domain and simple static website to AWS can seem daunting. Here is a conside guide on what to do, using the training domain *darkyellow.co.uk* as an example. Firstly...
 
 *Sign Up or Sign In to the AWS Management Console*
 
