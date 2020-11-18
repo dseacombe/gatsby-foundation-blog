@@ -7,7 +7,7 @@ description: "When you wake-up in the morning, do you rise with a fresh
   determination, ready for what the day will throw at you?  Or do you worry that
   you have sufficient ability and depths of reserve to succeed?  A deep sense of
   self-worth is a tremendous asset to help you with the challenges of the day. "
-featuredImage: ""
+featuredImage: /assets/self-worth-blue.png
 ---
 The world is physically, intellectually and emotionally demanding. You need a certain mindset to cope with the challenges and opportunities you face at work and in your personal life. If you have a strong sense of your own **self-worth**, then you'll be well placed to take each day in your stride, and enjoy the journey ahead.
 
