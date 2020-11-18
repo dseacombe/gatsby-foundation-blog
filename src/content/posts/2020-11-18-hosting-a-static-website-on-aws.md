@@ -42,15 +42,16 @@ On the Permissions Tab, click on the Block Public Access Tab and turn it off. Ty
 Then on the Bucket Policy tab, enter the policy as below, replacing the url in this example, with your own.  Note that: '*"Version": "2012-10-17"'* is not a date, so don't change it
 
 ```
-{
-    "Version": "2012-10-17",
+{ 
+  "Version": "2012-10-17",
+    "Id": "Policy1603792352865",
     "Statement": [
         {
-            "Sid": "PublicReadForGetBucketObjects",
+            "Sid": "Stmt1603792351039",
             "Effect": "Allow",
             "Principal": "*",
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::darkyellow.co.uk/*"
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::www.darkyellow.co.uk/*"
         }
     ]
 }
