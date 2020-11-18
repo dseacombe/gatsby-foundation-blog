@@ -32,7 +32,7 @@ On the Properties Tab, click on Static Website Hosting, and check ‘Use this bu
 ![](/assets/aws-2.png)
 
 Type in the names of the Index and Error documents, and then Save.  The 'Error' doc can be the same as the 'Index'.
-￼
+
 *Note the Endpoint.*  In this example it is \
 **http://darkyellow.co.uk.s3-website.eu-west-2.amazonaws.com**
 
