@@ -105,8 +105,7 @@ When the domain has a forwarded email address, for example, you don't actually h
 
 For example:
 
-  10 mx0.myregistrar.co.uk
-
+  10 mx0.myregistrar.co.uk\
   20 mx1.myregistrar.co.uk
 
 If this domain does have its own email account with a third-party email provider then you need to create an MX record with *their* MX records, or your email will stop working.
@@ -143,7 +142,7 @@ Then in your domain registrar's control panel, perhaps under Advanced DNS, creat
 
 Remove any A Records.￼
 
-**Check propagation progress at whatsmydns.net**￼
+**Check propagation progress at whatsmydns.net**
 
 ![](/assets/aws-13.png)
 
