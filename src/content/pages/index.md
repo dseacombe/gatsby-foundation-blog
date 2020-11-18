@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: David Seacombe
 tagline: JAMstack Developer
-featuredImage: /assets/david-seacombe.png
+featuredImage: /assets/christian-chen-kpydzvywfqg-unsplash.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
