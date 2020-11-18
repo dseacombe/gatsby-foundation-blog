@@ -7,23 +7,32 @@ description: Simple instructions on how to host you simple website on AWS,
   rather than on your domain registrar's hosting service.
 featuredImage: /assets/aws-blue.png
 ---
-\#Domain Set Up
+# Domain Set Up
 
 *Sign Up or Sign In to the AWS Management Console*
 
 ![AWS Management Console](/assets/screenshot-2020-11-18-at-17.47.42.png "AWS Management Console")
 
-On the Amazon S3 Console, create a Bucket with the exact same name as the Domain you wish to host.  This will only work for static websites - ie those with HTML, CSS and JS.
+On the Amazon S3 Console, create a Bucket with the exact same name as the Domain you wish to host. You can choose which AWS Region you want your bucket to be based in. It makes sense to choose the region you live in.  
+
+*Note that using S3will only work for static websites - ie those with HTML, CSS and JS.*
 
 On the Overview Tab, upload the site code, creating folders as necessary:
+
+![](/assets/aws-1.png)
 
 You will probably need CSS, Img and JS folders, plus your favicom.ico and index.html
 ￼
 On the Properties Tab, click on Static Website Hosting, and check ‘Use this bucket to host a website.
 
+![](/assets/aws-2.png)
+
 Type in the names of the Index and Error documents, and then Save.
 ￼
-Note the Endpoint.  You can but this URL into a browser to see if it works. You may need to wait a minute or two.  Make a note of this end point, because it will be needed in a CNAME with your domain registrar.
+Note the Endpoint.  In this example it is \
+http://darkyellow.co.uk.s3-website.eu-west-2.amazonaws.com
+
+You can put this URL into a browser to see if it works. You may need to wait a minute or two.  Make a note of this end point, because it will be needed in a CNAME with your domain registrar in a later step.
 
 On the Permissions Tab, click on the Block Public Access Tab and turn it off. Type in ‘confirm’, then Confirm.
 ￼
