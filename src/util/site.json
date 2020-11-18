@@ -3,10 +3,10 @@
     "title": "dseacombe.dev",
     "titleTemplate": "%s",
     "description": "Thoughts and code",
-    "siteUrl": "https://astonbeck.co.uk",
+    "siteUrl": "https://dseacombe.dev",
     "image": "/assets/stackrole.png",
     "iconimage": "/assets/stackrole.png",
-    "twitterUsername": "@stackrole"
+    "twitterUsername": "@dseacombe"
   },
   "ga": "UA-XXXXXXXXX-X"
 }
