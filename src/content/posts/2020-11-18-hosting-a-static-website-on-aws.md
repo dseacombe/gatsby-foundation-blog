@@ -5,7 +5,7 @@ slug: /host-on-aws
 date: 2020-11-18 17:44
 description: Simple instructions on how to host you simple website on AWS,
   rather than on your domain registrar's hosting service.
-featuredImage: /assets/aws.png
+featuredImage: /assets/aws-blue.png
 ---
 \#Domain Set Up
 
