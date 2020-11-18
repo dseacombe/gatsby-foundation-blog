@@ -39,7 +39,7 @@ On the Permissions Tab, click on the Block Public Access Tab and turn it off. Ty
 ![](/assets/aws-3.png)
 
 
-Then on the Bucket Policy tab, enter the policy as below, replacing the url in this example, with your own.  Note that: '*"Version": "2012-10-17"'* is not a date, so don't change it
+Then on the Bucket Policy tab, enter the policy as below, replacing the url in this example, with your own.  Note that: '*"Version": "2012-10-17"'* is not a date, so don't change it.
 
 ```
 { 
@@ -64,7 +64,7 @@ Then on the Bucket Policy tab, enter the policy as below, replacing the url in t
 Go back to the beginning and create a new bucket for the www. subdomain.
 *This time, there is no need to upload the site files.*
 
-The Static Website Hosting should be set to redirect to the main domain name.
+The Static Website Hosting should be set to *redirect to the main domain name,* not the AWS bucket that you have just set up.
 
 ![](/assets/aws-5.png)
 
@@ -79,8 +79,7 @@ Create a Hosted Zone for this domain name:
 ![](/assets/aws-6.png)
 
 
-Then Click on the newly created hosted zone domain name:
-￼
+Then Click on the newly created hosted zone domain name:￼
 
 ![](/assets/aws-7.png)
 
@@ -105,40 +104,56 @@ Don’t forget to click on the final Create Records button.
 When the domain has a forwarded email address,  Create an MX Record
 and include the domain registrar’s MX records:
 
-10 mx0.123-reg.co.uk
-20 mx1.123-reg.co.uk
+For example:
 
-When the domain has an email account as well, then 
+  10 mx0.myregistrar.co.uk
+  20 mx1.myregistrar.co.uk
 
-**Create an MX Record** 
-￼
+When the domain you are moving to AWS has an email account as well, then you will need to create several more records:
+
+**Create an MX Record** ￼
 
 ![](/assets/aws-8.png)
 
-Create a TXT Record 
+**Create a TXT Record** 
 
-v=spf1 include:spf.everycloudtech.com Ip4:88.151.128.0/21 -all
+v=spf1 include:spf.everycloudtech.com Ip4:88.151.128.0/21 -all￼
+
+![](/assets/aws-9.png)
+
+**Create an SRV Record** 
+
+![](/assets/aws-10.png)
+
 ￼
 
-Create an SRV Record 
-
-￼
-
-\#At your doamn registrar
+## At your domain registrar
 
 Select the Domain on your registrar’s Control Panel
 
-Update the Nameservers to be those specified by AWS Route53
+Update the Nameservers to be those specified by AWS Route53, as in the graphic below:
 
-￼
+![](/assets/aws-11.png)
 
-Advanced DNS.  Create a CNAME to point to the AWS S3 Endpoint. No need to include the http://  or the www.
+￼to the Nameserver section in your Domain Registrar - if it is not Amazon Route53, who also provide these services.
+
+![](/assets/aws-11b.png)
+
+**Create a CNAME to point to the AWS S3 Endpoint.** 
+
+Then in your domain registrar's control panel, perhaps under Advanced DNS, create a CNAME to point to the AWS S3 Endpoint. No need to include the http://  or the www.
+
+![](/assets/aws-12.png)
 
 Remove any A Records.
 ￼
 
-Check propagation progress at whatsmydns.net
+**Check propagation progress at whatsmydns.net**
 ￼
 
-Note
+![](/assets/aws-13.png)
+
+**Note**
 Changes generally propagate to all Route 53 servers within 60 seconds. When propagation is done, you can route traffic to your Amazon S3 bucket by using the names of the alias records that you created in this procedure.
+
+***That's it!***
