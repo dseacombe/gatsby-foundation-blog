@@ -130,27 +130,23 @@ v=spf1 include:spf.everycloudtech.com Ip4:88.151.128.0/21 -all￼
 
 ## At your domain registrar
 
-Select the Domain on your registrar’s Control Panel
-
-Update the Nameservers to be those specified by AWS Route53, as in the graphic below:
+Select the Domain on your registrar’s Control Panel. Update the Nameservers to be those specified by AWS Route53, as in the graphic below:
 
 ![](/assets/aws-11.png)
 
-Go ￼to the Nameserver section in your Domain Registrar (if it is not Amazon Route53, who also provide these services).
+Go to the Nameserver section in your Domain Registrar (if it is not Amazon Route53, who also provide these services).
 
 ![](/assets/aws-11b.png)
 
 **Create a CNAME to point to the AWS S3 Endpoint.** 
 
-Then in your domain registrar's control panel, perhaps under Advanced DNS, create a CNAME to point to the AWS S3 Endpoint. No need to include the http://  or the www.
+Then in your domain registrar's control panel, perhaps under Advanced DNS, create a WWW CNAME to point to the AWS S3 Endpoint. No need to include the http://  or the www.
 
 ![](/assets/aws-12.png)
 
-Remove any A Records.
-￼
+Remove any A Records.￼
 
-**Check propagation progress at whatsmydns.net**
-￼
+**Check propagation progress at whatsmydns.net**￼
 
 ![](/assets/aws-13.png)
 
