@@ -38,7 +38,7 @@ const Contact = ({data}) => {
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
           <p>&nbsp;</p>
           <p className="text-align-right">
-            <button className="button">Send Message<a href="mailto:ds@2ir.io">&nbsp;</a><span className="icon -right"><RiSendPlane2Line/></span></button>
+            <button className="button">Send Message<a href="mailto:ds@2ir.io"><span className="icon -right"><RiSendPlane2Line/></span></a></button>
           </p>
       </div>
 
