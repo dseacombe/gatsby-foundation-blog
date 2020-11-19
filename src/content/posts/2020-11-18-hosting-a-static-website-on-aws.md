@@ -116,11 +116,14 @@ When the domain you are moving to AWS has an email account as well, then you wil
 
 **Create a TXT Record** 
 
+This is an example, use your own.
 v=spf1 include:spf.everycloudtech.com Ip4:88.151.128.0/21 -all￼
 
 ![](/assets/aws-9.png)
 
 **Create an SRV Record** 
+
+This is an example, use your own.  Note that there are 4 values, each separated by a space.
 
 ![](/assets/aws-10.png)
 
@@ -130,13 +133,17 @@ Select the Domain on your registrar’s Control Panel. Update the Nameservers to
 
 ![](/assets/aws-11.png)
 
-Go to the Nameserver section in your Domain Registrar (if it is not Amazon Route53, who also provide these services).
+Go to the Nameserver section in your Domain Registrar (if it is not Amazon Route53, who also provide these services), and add in the new nameservers provided for the domain they are now hosting. These are examples, use your own.  
 
 ![](/assets/aws-11b.png)
 
 **Create a CNAME to point to the AWS S3 Endpoint.** 
 
-Then in your domain registrar's control panel, perhaps under Advanced DNS, create a WWW CNAME to point to the AWS S3 Endpoint. No need to include the http://  or the www.
+Remember that you took note of the AWS S3 Endpoint in an earlier step?
+In this example it is \
+**http://darkyellow.co.uk.s3-website.eu-west-2.amazonaws.com**
+
+In your domain registrar's control panel, perhaps under Advanced DNS, create a WWW CNAME to point to the AWS S3 Endpoint. No need to include the http://  or the www.
 
 ![](/assets/aws-12.png)
 
