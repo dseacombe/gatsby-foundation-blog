@@ -36,29 +36,10 @@ const Contact = ({data}) => {
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
-        <form className="contact-form" action="/thanks" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Name<input type="text" name="name" required /></label>   
-          </p>
-          <p>
-            <label>Email<input type="email" name="email" required /></label>
-          </p>
-          <p>
-            <label>Subject<input type="text" name="subject" required /></label>   
-          </p>
-          <p>
-            <label>Message<textarea name="message" required ></textarea></label>
-          </p>
+          <p>&nbsp;</p>
           <p className="text-align-right">
-            <button className="button" type="submit">Send Message <span className="icon -right"><RiSendPlane2Line/></span></button>
+            <button className="button">Send Message<a href="mailto:ds@2ir.io">&nbsp;</a><span className="icon -right"><RiSendPlane2Line/></span></button>
           </p>
-          <p className="text-align-right">
-            <button className="button">Send Message <span className="icon -right"><RiSendPlane2Line/></span><a href="mailto:contact@viverra.co.uk">contact@viverra.co.uk</a></button>
-          </p>
-      
-      
-        </form>
       </div>
 
     </Layout>
