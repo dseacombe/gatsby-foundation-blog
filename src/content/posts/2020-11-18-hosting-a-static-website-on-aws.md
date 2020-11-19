@@ -77,7 +77,7 @@ Create a Hosted Zone for your domain name.  You just need one, the www. subdomai
 
 ![](/assets/aws-6.png)
 
-Then Click on the newly created hosted zone domain name:￼
+Then Click on the newly created hosted zone domain name:
 
 ![](/assets/aws-7.png)
 
@@ -117,7 +117,8 @@ When the domain you are moving to AWS has an email account as well, then you wil
 **Create a TXT Record** 
 
 This is an example, use your own.
-v=spf1 include:spf.everycloudtech.com Ip4:88.151.128.0/21 -all￼
+
+v=spf1 include:spf.everycloudtech.com Ip4:88.151.128.0/21 -all
 
 ![](/assets/aws-9.png)
 
@@ -147,7 +148,7 @@ In your domain registrar's control panel, perhaps under Advanced DNS, create a W
 
 ![](/assets/aws-12.png)
 
-Remove any A Records.￼
+Remove any A Records.
 
 **Check propagation progress at whatsmydns.net**
 
