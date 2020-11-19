@@ -53,6 +53,11 @@ const Contact = ({data}) => {
           <p className="text-align-right">
             <button className="button" type="submit">Send Message <span className="icon -right"><RiSendPlane2Line/></span></button>
           </p>
+          <p className="text-align-right">
+            <button className="button">Send Message <span className="icon -right"><RiSendPlane2Line/></span><a href="mailto:contact@viverra.co.uk">contact@viverra.co.uk</a></button>
+          </p>
+      
+      
         </form>
       </div>
 
