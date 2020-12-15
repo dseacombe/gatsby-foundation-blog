@@ -27,21 +27,22 @@ Existing code was pointing to an external URL as the source of the hero graphic.
 
 ```
 
-Instead, a more relevant image was stored in a suitable sub-directry, within src, and referenced from the css.
+Instead, a more relevant image was stored in a suitable sub-directry, within assets, and referenced from the css.
 
-![File structure](/assets/screenshot-2020-12-15-at-16.35.17.png "File structure")
+![File structure](/assets/screenshot-2020-12-15-at-16.35.17.png "File structure"){ width=30% }
 
-and the code updated:
+The updated css:
 
 ```
 background-image: url('../assets/banners/Hero1.png');
 ```
 
-Note the .. relative path and the use of single quotes.
+Note the use of .. relative path and the single quotes around the url.
+
+<br>/
 
 
-
-Alternatively...
+**Alternatively...**
 
 The hero image could be replaced with a colour. In this case the background is a linear gradient.
 
