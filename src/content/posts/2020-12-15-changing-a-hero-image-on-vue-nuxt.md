@@ -29,9 +29,7 @@ Existing code was pointing to an external URL as the source of the hero graphic.
 
 Instead, a more relevant image was stored in a suitable sub-directry, within assets, and referenced from the css.
 
-<div style="width:150px; height:100px">
 ![File structure](/assets/screenshot-2020-12-15-at-16.35.17.png "File structure")
-</div>
 
 The updated css:
 
@@ -41,7 +39,7 @@ background-image: url('../assets/banners/Hero1.png');
 
 Note the use of .. relative path and the single quotes around the url.
 
-<br>/
+<br>
 
 
 **Alternatively...**
