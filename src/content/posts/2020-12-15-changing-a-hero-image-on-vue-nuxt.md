@@ -27,7 +27,7 @@ Existing code was pointing to an external URL as the source of the hero graphic.
 
 ```
 
-Instead, a more relevant image was stored in a suitable sub-directry, within assets, and referenced from the css.
+Instead, a more relevant image was stored in a suitable sub-directory, within assets, and referenced from the css.
 
 ![File structure](/assets/screenshot-2020-12-15-at-16.35.17.png "File structure")
 
