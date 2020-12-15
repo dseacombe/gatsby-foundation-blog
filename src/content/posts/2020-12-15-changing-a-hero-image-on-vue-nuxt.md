@@ -50,7 +50,7 @@ The hero image could be replaced with a colour. In this case the background is a
 background: linear-gradient(90deg, rgba(249,168,38,1) 0%, rgba(240,90,40,1) 70%);
 ```
 
-A really useful took is [cssgradient.io](https://cssgradient.io/) which allows you to model what you want to achieve, and then grab the code.
+A really useful tool is [cssgradient.io](https://cssgradient.io/) which allows you to model what you want to achieve, and then grab the code.
 
 ![](/assets/screenshot-2020-12-15-at-16.47.03.png)
 
