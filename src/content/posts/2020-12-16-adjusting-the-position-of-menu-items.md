@@ -19,7 +19,7 @@ This code:
    </div>
 ```
 
-was updated by replacing ```navbar-start``` with ```navbar-end```:
+was updated by replacing `navbar-start` with `navbar-end`:
 
 ```
     <div class="navbar-end">
@@ -27,3 +27,7 @@ was updated by replacing ```navbar-start``` with ```navbar-end```:
       <router-link to="/about" class="navbar-item">About</router-link>
     </div>
 ```
+
+resulting in:
+
+![](/assets/header-end.png)
