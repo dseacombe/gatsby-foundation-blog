@@ -19,7 +19,7 @@ This code:
    </div>
 ```
 
-was updated by replacing navbar-start with navbar-end:
+was updated by replacing `navbar-start` with `navbar-end`:
 
 ```
     <div class="navbar-end">
