@@ -8,15 +8,17 @@ featuredImage: /assets/toggle.png
 ---
 Bulma has a neat Navbar solution, but it is CSS only. One option to make the mobile menu option work is to make it active by toggling it.
 
+
 This the full-size screen, with menu options:
 
 ![](/assets/screenshot-2021-01-08-at-12.37.05.png)
+
 
 And this is the mobile version. The burger menu does not work out of the box.
 
 <img src="/assets/screenshot-2021-01-08-at-12.44.07.png" width=50%>
 
-Within the container their are two divs: navbar-brand and navbar-menu. The mobile burger menu is hidden as part of navbar-brand.
+Within the container there are two divs: navbar-brand and navbar-menu. The mobile burger menu is hidden as part of navbar-brand.
 
 First the link must be made so that the mobile burger bar mimics the main navigation menu.
 
@@ -37,9 +39,11 @@ data: function() {
 } //You may need a closing comma
 ```
 
+
 Here is the working solution:
 
 <img src="/assets/screenshot-2021-01-08-at-14.00.06.png" width=50%>
+
 
 Finally, you may want to apply some styling, as in the image above.  By default, the mobile menu is displayed on the left of the device. To move it to the right, add `is-pulled-right` to `class="navbar-menu is-pulled-right"`.
 
