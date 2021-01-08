@@ -24,7 +24,8 @@ The burger bar button is given a `data-target="navbar"`. Similarly, the navbar-m
 
 Next, the toggle is put in place, to bind the menu values to the burger bar when the burger bar is clicked, and made active.
 
-The burger bar button is given futher attributes: `@click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}"`. Similarly, the navbar-menu is given `v-bind:class="{'is-active': isOpen}"`.
+The burger bar button is given futher attributes:
+`@click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}"`. Similarly, the navbar-menu is given `v-bind:class="{'is-active': isOpen}"`.
 
 A data function is added to the script, to initialise the value.
 
@@ -40,7 +41,7 @@ Here is the working solution:
 
 ![](/assets/screenshot-2021-01-08-at-14.00.06.png){width=50%}
 
-Finally, you may want to apply some styling, as in teh image above.  By default, the mobile menu is displayed on the left of the device. To move it to the right, add `is-pulled-right` to `class="navbar-menu is-pulled-right"`.
+Finally, you may want to apply some styling, as in the image above.  By default, the mobile menu is displayed on the left of the device. To move it to the right, add `is-pulled-right` to `class="navbar-menu is-pulled-right"`.
 
 You can add colour and padding to the burger bar menu items by amending `.navbar-menu.is-active`.
 
