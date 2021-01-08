@@ -10,45 +10,36 @@ Bulma has a neat Navbar solution, but it is CSS only. One option to make the mob
 
 This the full-size screen, with menu options:
 
-
-
 And this is the mobile version. The burger does not work out of the box.
-
-
 
 Within the container their are two divs: navbar-brand and navbar-menu. The mobile burger menu is hidden as part of navbar-brand.
 
 First the link must be made so that the mobile burger bar mimics the main navigation menu.
 
-The burger bar button is given a ```data-target="navbar"```. Similarly, the navbar-menu is given an ```id="navbar"```.
+The burger bar button is given a `data-target="navbar"`. Similarly, the navbar-menu is given an `id="navbar"`.
 
 Next, the toggle is put in place, to bind the menu values to the burger bar when the burger bar is clicked, and made active.
 
-The burger bar button is given futher attributes: ```@click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}"```. Similarly, the navbar-menu is given ```v-bind:class="{'is-active': isOpen}"```.
+The burger bar button is given futher attributes: `@click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}"`. Similarly, the navbar-menu is given `v-bind:class="{'is-active': isOpen}"`.
 
 A data function is added to the script, to initialise the value.
 
-
+```
 data: function() {
-
-return {
-
-isOpen: false
-
-}
-
+  return {
+    isOpen: false
+    }
 } //You may need a closing comma
+```
 
 Finally, you may want to apply some styling. By default, the mobile menu is displayed on the left of the device. To move it to the right, add is-pulled-right to class="navbar-menu is-pulled-right",
 
 You can add colour and padding to the burger bar menu items by amending .navbar-menu.is-active.
 
+```
 .navbar-menu.is-active {
-
-display: block;
-
-background: linear-gradient(90deg,#ffffff,#c8c8c8);
-
-padding-left: 5px;
-
+  display: block;
+  background: linear-gradient(90deg,#ffffff,#c8c8c8);
+  padding-left: 5px;
 }
+```
