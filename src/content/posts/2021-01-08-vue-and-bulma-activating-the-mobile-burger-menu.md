@@ -14,7 +14,7 @@ This the full-size screen, with menu options:
 
 And this is the mobile version. The burger menu does not work out of the box.
 
-![](/assets/screenshot-2021-01-08-at-12.44.07.png)
+![](/assets/screenshot-2021-01-08-at-12.44.07.png){width=50%}
 
 Within the container their are two divs: navbar-brand and navbar-menu. The mobile burger menu is hidden as part of navbar-brand.
 
@@ -38,7 +38,7 @@ data: function() {
 
 Here is the working solution:
 
-![](/assets/screenshot-2021-01-08-at-14.00.06.png)
+![](/assets/screenshot-2021-01-08-at-14.00.06.png){width=50%}
 
 Finally, you may want to apply some styling, as in teh image above.  By default, the mobile menu is displayed on the left of the device. To move it to the right, add `is-pulled-right` to `class="navbar-menu is-pulled-right"`.
 
