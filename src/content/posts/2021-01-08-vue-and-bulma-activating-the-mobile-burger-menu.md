@@ -36,6 +36,10 @@ data: function() {
 } //You may need a closing comma
 ```
 
+Here is the working solution:
+
+![](/assets/screenshot-2021-01-08-at-14.00.06.png)
+
 Finally, you may want to apply some styling. By default, the mobile menu is displayed on the left of the device. To move it to the right, add `is-pulled-right` to `class="navbar-menu is-pulled-right"`.
 
 You can add colour and padding to the burger bar menu items by amending `.navbar-menu.is-active`.
