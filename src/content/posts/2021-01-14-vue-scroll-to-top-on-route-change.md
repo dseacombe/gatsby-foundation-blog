@@ -10,9 +10,9 @@ Single Page Applications always open new pages in the same scroll position.
 If you change the route, it will take you to the new page but it won’t scroll to the top of the page. 
 This trick opens the page that is navigated back to at the top of the page.
 
-\`\`\`  mounted () {
+``` mounted () {
     window.scrollTo(0, 0);
-  }\`\`\`
+  }```
 
 This code example is for an About page:
 
